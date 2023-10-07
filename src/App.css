@@ -1,0 +1,636 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: all ease 0.25s;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+div {
+  width: 100%;
+}
+
+p {
+  line-height: 30px;
+}
+
+:root {
+  --blue: #4b76fd;
+  --white: white;
+  --gray: rgb(146, 146, 146);
+  --black: rgb(33, 33, 33);
+  --gray-2: rgb(230, 230, 230);
+  --shadow: rgb(206, 206, 206);
+}
+
+/* npm i tsparticles-slim || npm i react-tsparticles */
+
+.particle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.header_can {
+  background-image: url("./image/back8.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 0 60px 20px 60px;
+  overflow: hidden;
+}
+
+.App-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  margin: 50px 0 10px 0;
+}
+
+.header_can img {
+  width: 100px;
+  margin: 10px 0;
+}
+
+.head_p {
+  font-size: 18px;
+  letter-spacing: 8px;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 30px 0 40px 0;
+}
+
+.head_p span,
+h1 span,
+h2 span {
+  color: var(--blue);
+}
+
+.App-header h4 {
+  letter-spacing: 3px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.App-header button {
+  background-color: transparent;
+  padding: 15px 55px;
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 40px 0 0 0;
+  cursor: pointer;
+  transition: all ease 0.35s;
+}
+
+.App-header button:hover {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+/*  */
+
+.Service {
+  padding: 80px 0 0 0;
+  background-image: url("./image/back5.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.Service h2,
+.skillSec h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.Service h2 {
+  margin: 30px 0 40px 0;
+  text-align: center;
+}
+
+.skillSec h2 {
+  margin: 20px 0;
+}
+
+.Service .p1 {
+  color: var(--gray);
+  font-size: 18px;
+  max-width: 750px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+.gridCan {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 70px 30px;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 5px 0;
+}
+
+.cardHead p,
+.aboutp {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.gridCan .p2 {
+  font-size: 16px;
+  color: var(--gray);
+}
+
+/*  */
+
+
+.skillSec {
+  display: flex;
+  min-height: 90vh;
+}
+
+.skillSec div {
+  flex: 1;
+
+}
+
+.skillCan {
+  /* background-color: rgb(241, 241, 241); */
+  padding: 80px 60px 10px 70px;
+  height: 100%;
+  box-shadow: inset 0 0 10px var(--shadow);
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.skill p {
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.progress {
+  background-color: var(--gray-2);
+  height: 6px;
+  max-width: 500px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 2px 1px var(--shadow);
+  /* overflow: hidden; */
+  margin: 5px 0;
+}
+
+.progress .len {
+  height: 100%;
+  background-color: var(--blue);
+  border-radius: 50px;
+  position: relative;
+}
+
+.level {
+  position: absolute;
+  top: -65px;
+  right: -25px;
+  background-color: var(--black);
+  width: 50px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.project {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.project h5 {
+  font-size: 20px;
+  letter-spacing: 15px;
+  font-weight: 500;
+}
+
+.project h2 {
+  font-size: 50px;
+  color: var(--blue);
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.project p {
+  color: var(--gray);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.proGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.moreProj {
+  background-color: var(--blue);
+  color: var(--white);
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray);
+  cursor: pointer;
+
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questions h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: rgb(92, 92, 92);
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+
+}
+
+.answer p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+.faqsCan {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+svg {
+  transition: transform .5s ease-in;
+}
+
+/* ============ footer======================== */
+footer {
+  width: 100%;
+  margin: 80px 0 0 0;
+  bottom: 0;
+  background: linear-gradient(to right, var(--black), var(--black));
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col:nth-child(2) .col:nth-child(3) {
+  flex-basis: 15%;
+
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.col p {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+
+}
+
+form .fa-solid {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fa-solid {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: var(--gray-2);
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyrigth {
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navlinks {
+  max-width: 400px;
+  display: flex;
+  gap: 20px;
+  color: var(--white);
+  font-size: 18px;
+}
+
+.navlinks p {
+  cursor: pointer;
+
+}
+
+.about {
+  background-color: var(--black);
+  padding: 60px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-2);
+  gap: 60px;
+  border-radius: 0px 150px 0px 0px;
+  overflow: hidden;
+}
+
+.link {
+  color: var(--white);
+}
+
+.about div {
+  flex: 1;
+  max-width: 700px;
+}
+
+.about div img {
+  object-fit: contain;
+}
+
+.form {
+  max-width: 800px;
+  padding: 8px;
+  margin: 0px auto;
+}
+
+.form input,
+.form textarea {
+  font-size: 18px;
+  padding: 13px;
+  border: 1px solid var(--gray);
+  color: var(--gray);
+  width: 100%;
+  margin: 8px 0;
+}
+
+.form .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form button {
+  color: var(--gray-2);
+}
+
+.name input {
+  flex: 1;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width:1030px) {
+  .skillSec {
+    flex-direction: column;
+  }
+
+  .proGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media screen and (max-width:1300px) {
+  .about {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:798px) {
+  .gridCan {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .proGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .nav{
+    display: block;
+  }
+  
+}
+
+@media screen and (max-width:732px) {
+  h1 {
+    font-size: 40px;
+    margin: 10px 0 20px 0;
+
+  }
+
+  .header_can img {
+    width: 80px;
+
+  }
+
+  .App-header {
+    margin: 20px 0 0 0;
+  }
+
+  .header_can {
+    padding: 0 15px 20px 15px;
+  }
+}
+
+@media screen and (max-width:516px) {
+
+  .skillCan {
+    padding: 80px 25px 10px 25px;
+  }
+
+  .skillSec h2 {
+    font-size: 40px;
+  }
+
+  .skill img {
+    width: 30px;
+  }
+
+  .skill p {
+    letter-spacing: 0.4px;
+
+  }
+}
