@@ -23,13 +23,13 @@ const Footer = () => {
               </div>
             </h3>
             <p>
-              <i className="fa-solid fa-phone"> </i> 237 xxx xxx xxx
+              <i className="fa-solid fa-phone"> </i> 237 673263533
             </p>
             <p>
               <i className="fa-solid fa-envelope"> </i>contact@Spektralsoft.com
             </p>
             <p>
-              <i className="fa-solid fa-location-dot"> </i>Douala xxxx
+              <i className="fa-solid fa-location-dot"> </i>Douala ange raphaelle
             </p>
           </div>
 
@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
         <hr />
         <p className="copyrigth">
-          Spektralsoft Theme by Theme Move. All Right Reserved 2023.
+          Spektralsoft Theme by Theme Move. All Right Reserved 2024.
         </p>
       </footer>
     </>
